@@ -10,100 +10,166 @@
             font-family: Lato, Helvetica;
         }
 
-        html, body {
+        html,
+        body {
             margin: 0;
             padding: 0;
             height: 100%;
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #7D82B8;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-image: url("pexels-shkrabaanthony-7524683.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 150px;
             position: relative;
-            top: 0;
             width: 100%;
+            box-sizing: border-box;
         }
 
-        li {
-            float: right;
+        .header .container {
+            position: relative;
+            padding-top: 10px;
         }
 
-        li a {
+        nav ul {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 10 px 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            position: relative;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav li a {
             display: block;
             color: black;
-            text-align: center;
+            font-size: 16px;
             padding: 14px 16px;
             text-decoration: none;
         }
 
-        li a:hover {
-            background-color: #E9724C;
-        }
-
-        .headertext {
-            background-color: #f1f1f1;
-            padding: 20px;
-            text-align: left;
-            font-size: 15px;
-            width: 300px;
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-
-        }
-
-        .header {
-            background-color: #E9724C;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            height: 150px;
-            position: relative;
-            width: 100%;
-            box-sizing: border-box; 
+        nav li a:hover {
+            background-color: #ddd;
+            color: black;
         }
 
         .footer {
             background-color: #A5B592;
             height: 80px;
-            position: fixed;
+            position: relative;
             width: 100%;
+            margin-top: 50px;
         }
 
+        .main {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px 0;
+            box-sizing: border-box;
+            max-width: 1000px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .main h2 {
+            margin-top: 0;
+        }
+
+        .main p {
+            line-height: 1.6;
+        }
+
+        .main .picture {
+            display: inline-block;
+            justify-content: center;
+        }
+
+        .main .text {
+            display: inline-block;
+            flex-direction: column;
+            justify-content: center;
+            ;
+        }
     </style>
 </head>
 
 <body>
-
-    <!-- Valikko  -->
-    <nav>
-        <ul>
-            <li><a class="active" href="#">Etusivu</a></li>
-            <li><a href="#">Esittely</a></li>
-            <li><a href="#">Yhteystiedot</a></li>
-        </ul>
-    </nav>
-
     <!-- Header-elementti -->
     <header class="header">
+        <div class="container">
+            <!-- Valikko  -->
+            <nav>
+                <ul class="nav ul">
+                    <li class="nav ul"><a class="active" href="kotisivu.html">Etusivu</a></li>
+                    <li class="nav ul"><a href="tieto.html">Esittely</a></li>
+                    <li class="nav ul"><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <p>Meidän tunnit kestäväät 60  minuuttia, josta 40 minuuttia on ohjattua jooga pentujen vieressä ja 20 minuuttia pentujen leikki aika. Ota kuvia ja nauti pentujen rakkaudesta! 
-    Tunteja järjestetään viikonloppuisin Helsingin Pasilan tiloissa, osoitteessa Asemapäällikönkatu 12 B  ja niitä johtaa ammattilaiset jooga ohjaajat.
-    Tunti on avoin kaikille, riippumatta jooga tasostasi! Meidän tavoitteemme on luoda  tila, jossa  kaikki tuntee olonsa rauhallisena.
-    Varaa paikkasi nyt ja koe Puppy-joogan taika!</p>
 
-    <br>1. Ville Energinen ja dynaaminen ammattilainen ohjaaja, jonka tunneilla hymyillään , kun joogaharjoituksen liikkeet sulautuvat pentujen iloiseen energiaan.</br>
-    <br>2. Emma Kokenut joogaohjaaja, joka erikoistuu stressihallintaan ja mielen rauhoittamiseen. Hänellä on monen vuoden kokemus jooga-ohjauksesta, ja hänen tunneilla on pehmeä ja rauhallinen tunnelma. </br>
-    <br>3. Laura Empaattinen ja lämmin ohjaaja, joka painottaa yhteisöllisyyttä ja luo hyväksyvän ilmapiirin. </br>
+    <!-- Teksti-alue -->
+    <div class="container"></div>
+    <div class="main">
+        <div class="picture"><img src="pexels-shkrabaanthony-7524689.jpg" alt="Nainen jooga-asussa corgin kanssa"></div>
+        <div class="text">
+
+            <p>
+                Meidän tunnit kestävät 60 minuuttia, josta 40 minuuttia on ohjattua joogaa pentujen vieressä ja 20
+                minuuttia
+                pentujen leikkiaikaa. Ota kuvia ja nauti pentujen rakkaudesta!
+                Tunteja järjestetään viikonloppuisin Helsingin Pasilan tiloissa, osoitteessa <strong>Asemapäällikönkatu
+                    12
+                    B</strong>, ja niitä johtavat ammattilaiset joogaohjaajat.
+                Tunti on avoin kaikille, riippumatta joogatasostasi! Meidän tavoitteemme on luoda tila, jossa kaikki
+                tuntevat
+                olonsa rauhalliseksi.
+                <strong>Varaa paikkasi nyt ja koe Puppy-joogan taika!</strong>
+            </p>
+
+            <h2>Ohjaajamme</h2>
+            <ul>
+                <li>
+                    <strong>Ville:</strong> Energinen ja dynaaminen ammattilaisohjaaja, jonka tunneilla hymyillään, kun
+                    joogaharjoituksen liikkeet sulautuvat pentujen iloiseen energiaan.
+                </li>
+                <li>
+                    <strong>Emma:</strong> Kokenut joogaohjaaja, joka erikoistuu stressinhallintaan ja mielen
+                    rauhoittamiseen.
+                    Hänellä on monen vuoden kokemus joogaohjauksesta, ja hänen tunneillaan on pehmeä ja rauhallinen
+                    tunnelma.
+                </li>
+                <li>
+                    <strong>Laura:</strong> Empaattinen ja lämmin ohjaaja, joka painottaa yhteisöllisyyttä ja luo
+                    hyväksyvän
+                    ilmapiirin.
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    </div>
 
     <!-- Alapalkki -->
     <footer class="footer">
-        <p>Alapalkki johon tulee yhteystietoja</p>
+        <p>Puppy Yoga Oy</p>
     </footer>
 
 
