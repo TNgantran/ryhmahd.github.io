@@ -108,6 +108,31 @@
             ;
         }
 
+        /* Mobiili versio */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .header {
+                height: 300px;
+                background-position: center center;
+            }
+
+            .main {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .main .picture {
+                max-width: 90%;
+            }
+
+            .main .text {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 
@@ -118,18 +143,27 @@
             <!-- Valikko  -->
             <nav>
                 <ul class="nav ul">
-                    <li class="nav ul"><a href="kotisivu.html">Etusivu</a></li>
-                    <li class="nav ul"><a href="tieto.html">Esittely</a></li>
-                    <li class="nav ul"><a class="active" href="yhteystiedot.html">Yhteystiedot</a></li>
+                    <li class="nav li"><a href="kotisivu.html">Etusivu</a></li>
+                    <li class="nav li"><a href="tieto.html">Esittely</a></li>
+                    <li class="nav li"><a class="active" href="yhteystiedot.html">Yhteystiedot</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <p>Asemapäällikönkatu 12b</p>
-    <p>00520, Helsinki</p>
-    <p>puppy.jooga@gmail.com</p>
-    <p>+358404245505</p>
+
+    <!-- Teksti-alue -->
+    <div class="container"></div>
+    <div class="main">
+        <div class="text">
+            <h1>Yhteystiedot</h1>
+            <p>Asemapäällikönkatu 12b</p>
+            <p>00520, Helsinki</p>
+            <p>puppy.jooga@gmail.com</p>
+            <p>+358404245505</p>
+        </div>
+    </div>
+    </div>
+
 
     <!-- Alapalkki -->
     <footer class="footer">
